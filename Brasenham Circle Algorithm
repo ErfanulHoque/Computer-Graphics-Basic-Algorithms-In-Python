@@ -1,0 +1,29 @@
+import turtle
+import time
+
+def circle(xc,yc,r):
+         d=3-2*r
+         x=0
+         y=r
+         turtle.penup()
+         turtle.goto(xc,yc)
+         turtle.pendown()
+         turtle.color("red")
+         while(x<=y):
+            time.sleep(0.000001)
+            turtle.goto(xc+x,yc+y)
+            turtle.goto(xc-x,yc+y)
+            turtle.goto(xc+x,yc-y)
+            turtle.goto(xc-x,yc-y)
+            turtle.goto(xc+y,yc+x)
+            turtle.goto(xc-y,yc+x)
+            turtle.goto(xc+y,yc-x)
+            turtle.goto(xc-y,yc-x)
+            if(d<=0):
+                     d=d+4*x+6
+            else:
+                     d=d+4*x-4*y+10
+                     y=y-1
+            x=x+1
+         turtle.penup()
+circle(20,20,50)
