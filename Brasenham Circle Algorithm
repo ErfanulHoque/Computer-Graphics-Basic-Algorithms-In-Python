@@ -27,3 +27,4 @@ def circle(xc,yc,r):
             x=x+1
          turtle.penup()
 circle(20,20,50)
+turtle.hideturtle()
