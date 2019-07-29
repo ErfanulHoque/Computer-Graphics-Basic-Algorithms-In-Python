@@ -1,6 +1,8 @@
 import turtle
 import time
 
+xc,yc=eval(input("Enter coordinates of center of the circle(separating with comma): "))
+r=eval(input("Enter length of radius: "))
 def circle(xc,yc,r):
          d=3-2*r
          x=0
@@ -26,5 +28,5 @@ def circle(xc,yc,r):
                      y=y-1
             x=x+1
          turtle.penup()
-circle(20,20,50)
+circle(xc,yc,r)
 turtle.hideturtle()
