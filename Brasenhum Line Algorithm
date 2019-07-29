@@ -1,0 +1,29 @@
+import turtle
+
+
+def line(x1,y1,x2,y2):
+         dx = abs(x2-x1)
+         dy = abs(y2-y1)
+
+         x = x1
+         y = y1
+
+         p = 2 * dy-dx
+
+         turtle.penup()
+         turtle.color("red")
+         turtle.goto(x1, y1)
+         turtle.pendown()
+
+         while(x<x1):
+            if(p>=0):
+                     y=y+1
+                     p=p+2*dy-2*dx
+            else:
+                     p=p+2*dy
+            x=x+1
+            turtle.goto(x,y)
+         turtle.goto(x2,y2)
+         turtle.penup()
+
+line(10,30,200,30)
