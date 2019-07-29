@@ -1,6 +1,7 @@
 import turtle
 
-
+x1,y1=eval(input("Enter initial coordinates (separating with comma): "))
+x2,y2=eval(input("Enter final coordinates (separating with comma): "))
 def line(x1,y1,x2,y2):
          dx = abs(x2-x1)
          dy = abs(y2-y1)
@@ -26,5 +27,5 @@ def line(x1,y1,x2,y2):
          turtle.goto(x2,y2)
          turtle.penup()
 
-line(10,30,200,30)
+line(x1,y1,x2,y2)
 turtle.hideturtle()
