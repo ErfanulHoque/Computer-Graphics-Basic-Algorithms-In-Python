@@ -1,1 +1,1 @@
-# COmputer-Graphics-Basic-Algorithms-In-Python
+# Computer-Graphics-Basic-Algorithms-In-Python
